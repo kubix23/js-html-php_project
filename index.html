@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <link rel="stylesheet" href="./style.css">
+        <meta charset="utf8">
+    </head>
+    <body>
+        <div id="menu">
+            <form action='javascript:void(0);' onsubmit='return POST()' id='logowanie'>
+                <input placeholder='Login' id='login' required />
+                <input type='password' placeholder='Hasło' id='password' required />
+                <canvas onclick="canvas()" id='captcha'></canvas>
+                <input pattern="\w*" id='captchtext' type="capatch" placeholder="Wpisz Capatch" required />
+                <button style='cursor: pointer;' type='submit'>Zaloguj</button>
+            </form>
+
+            <button onclick="rejestruj()" style='color:white;background-color: rgba(0,0,0,0.3);;cursor: pointer;'>Zarejestruj</button>
+            <h3 style="text-align: center;color: red;"></h3>
+                     
+        </div>
+        <div id="treść">
+            
+        </div>
+    </body>
+    <script src="scripts.js"></script>
+</html>

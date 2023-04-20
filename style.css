@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+*:focus{
+    outline: none;
+}
+html{
+    min-width: 876px;;
+}
+body {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#menu{
+    width: 25vw;
+    min-width: 210px;
+    height: 80vh;
+    padding: 10px 4px;
+
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    background-color: lime;
+}
+#logowanie{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250px;
+}
+#logowanie *:not(canvas){
+    height: 15%;
+    margin-bottom: 4px;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+}
+#logowanie input::placeholder{
+    color:black;
+    opacity: 1;
+}
+
+#icons{
+    border-bottom: 3px solid black;
+    text-align: left;
+    padding: 2px;
+    padding-bottom: 10px;
+    margin-left: -4px;
+    width: calc(100% + 8px);
+}
+
+#icons svg{
+    width: 25%;
+    height:100%;
+    padding: 5px;
+    max-width: 130px;
+    min-width: 75px;
+
+    margin:0px 2px;
+    background-color: gray;
+    border:3px solid black;
+    border-radius: 20%;
+
+    cursor: pointer;
+}
+.kfocusmin{
+    position: absolute;
+    z-index: 101;
+    width: 400px !important;
+    justify-self: left;
+}
+.kfocusmin #menu1{
+    color: wheat;
+    background-color: rgb(102, 102, 102);
+}
+.kfocus{
+    color: magenta;
+}
+.koszykProdukt{
+    border: 2px solid black;
+    margin: 2px;
+    padding: 3px;
+
+    height: 100px;
+    position: relative;
+    background-color: rgba(0,0,0,0.3);
+}
+.koszykProdukt h4{
+    position: absolute;
+    bottom:-15px;
+    left: 5px;
+}
+.koszykProdukt p{
+    position: absolute;
+    bottom:-10px;
+    right: 5px;
+}
+.koszykProdukt button{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+#menu .zamow{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 255, 191, 0.5);
+    font-weight: bold;
+    padding: auto;
+    cursor: pointer;
+}
+
+
+
+
+#treść{
+    width: 70vw;
+    height: 80vh;
+    border: 1px solid black;
+    overflow-y: auto;
+    min-width: 653px;
+    background-color: green;
+    position: relative;
+}
+
+#page{
+    border: 3px solid black;
+    border-radius: 7px;
+    height: 30px;
+    display: flex;
+}
+
+.kafelek{
+    border-right: 3px solid rgba(25, 68, 50, 0.957);
+    width: 10%;
+    height: 100%;
+    background-color: rgba(32, 100, 72, 0.957);
+    padding: auto auto;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.kafelek:focus{
+    border: none;
+    background-color: rgb(29, 88, 64)
+}
+.aktywny{
+    background-color: brown !important;
+}
+
+
+
+
+
+.produkt{
+    transition-duration: 200ms;
+    border-bottom: 2px solid black;
+    height: 25%;
+    min-height: 200px;
+    max-height: 500px;
+    padding: 5px 10px;
+    position: relative;
+}
+#roz{
+    max-height: none;
+    transition-duration: 200ms;
+    height: 600px;
+}
+
+.produkt p{
+    width: 80%;
+}
+.produkt a{
+    cursor: pointer;
+    color: rgb(54, 54, 160);
+}
+.produkt a:hover{
+    color: rgb(172, 24, 24);
+    text-decoration-line: underline;
+}
+.cena{
+    font-size: 28px;
+    width: 140px;
+    text-align: right;
+    position: absolute;
+    top: 7px;
+    right:20px;
+}
+
+.ilość{
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+    width: 60px;
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+}
+.maxilość{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 25px;
+    left: 80px;
+}
+.suma{
+    margin: 0;
+    font-size: 21px;
+    position: absolute;
+    bottom: 25px;
+    left: 130px;
+}
+.out_of_stock{
+    color: red;
+    margin: 0;
+    font-size: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.koszykadd{
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: teal;
+}
+.koszykadd:active{
+    transition-duration: 100ms;
+    background-color: thistle;
+}
